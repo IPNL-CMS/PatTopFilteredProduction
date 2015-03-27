@@ -1,0 +1,420 @@
+// -*- C++ -*-
+//
+// Package:    TestBranches
+// Class:      TestBranches
+// 
+/**\class TestBranches TestBranches.cc PatTopProduction/TestBranches/src/TestBranches.cc
+
+ Description: [one line class summary]
+
+ Implementation:
+     [Notes on implementation]
+*/
+//
+// Original Author:  Elvire BOUVIER
+//         Created:  Tue Mar 17 18:19:02 CET 2015
+// $Id$
+//
+//
+
+
+// system include files
+#include <memory>
+
+// user include files
+#include "FWCore/Framework/interface/Frameworkfwd.h"
+#include "FWCore/Framework/interface/EDAnalyzer.h"
+
+#include "FWCore/Framework/interface/Event.h"
+#include "FWCore/Framework/interface/MakerMacros.h"
+
+#include "FWCore/ParameterSet/interface/ParameterSet.h"
+#include "FWCore/Framework/interface/ESHandle.h"
+#include "FWCore/MessageLogger/interface/MessageLogger.h"
+#include "DataFormats/Common/interface/MergeableCounter.h"
+#include "FWCore/Framework/interface/LuminosityBlock.h"
+
+#include "DataFormats/ParticleFlowCandidate/interface/PFCandidate.h"
+#include "DataFormats/ParticleFlowCandidate/interface/PFCandidateFwd.h"
+#include "DataFormats/PatCandidates/interface/Jet.h"
+#include "DataFormats/PatCandidates/interface/Muon.h"
+#include "DataFormats/PatCandidates/interface/Electron.h"
+#include "DataFormats/TrackReco/interface/TrackFwd.h"
+#include "DataFormats/HepMCCandidate/interface/GenParticle.h"
+#include "DataFormats/JetReco/interface/GenJet.h"
+
+#include "FWCore/ServiceRegistry/interface/Service.h"
+#include "CommonTools/UtilAlgos/interface/TFileService.h"
+
+#include "TFile.h"
+#include "TH1D.h"
+#include "TLorentzVector.h"
+
+/* C++ Headers */
+using namespace std;
+using namespace edm;
+
+inline bool compareParticlesByPt(reco::PFCandidate first, reco::PFCandidate second)
+{
+  if (first.pt() > second.pt()) 
+    return true; 
+  else 
+    return false;
+}
+//
+// class declaration
+//
+
+class TestBranches : public edm::EDAnalyzer {
+   public:
+      explicit TestBranches(const edm::ParameterSet&);
+      ~TestBranches();
+
+      static void fillDescriptions(edm::ConfigurationDescriptions& descriptions);
+
+
+   private:
+      virtual void beginJob() ;
+      virtual void analyze(const edm::Event&, const edm::EventSetup&);
+      virtual void endJob() ;
+
+      virtual void beginRun(edm::Run const&, edm::EventSetup const&);
+      virtual void endRun(edm::Run const&, edm::EventSetup const&);
+      virtual void beginLuminosityBlock(edm::LuminosityBlock const&, edm::EventSetup const&);
+      virtual void endLuminosityBlock(edm::LuminosityBlock const&, edm::EventSetup const&);
+
+      // ----------member data ---------------------------
+      int nEventsTotal;
+      int nEventsFiltered;
+      int nevt[6];
+      int nevt2;
+      TH1D* h_D0_Mass;
+      TH1D* h_JPsi_Mass;
+      TH1D* h_Mu_Pt;
+      TH1D* h_El_Pt;
+      TH1D* h_Tr_N;
+      TH1D* h_GenCons_N;
+      TH1D* h_PFAss_N;
+};
+
+//
+// constants, enums and typedefs
+//
+
+//
+// static data member definitions
+//
+
+//
+// constructors and destructor
+//
+TestBranches::TestBranches(const edm::ParameterSet& iConfig)
+
+{
+   //now do what ever initialization is needed
+   nEventsTotal = 0;
+   nEventsFiltered = 0;
+   for (unsigned int i = 0; i < 6; i++) nevt[i] = 0;
+   nevt2 = 0;
+
+}
+
+
+TestBranches::~TestBranches()
+{
+ 
+   // do anything here that needs to be done at desctruction time
+   // (e.g. close files, deallocate resources etc.)
+  std::cout << "===================== TestBranches::~TestBranches =========================" << std::endl;
+  std::cout << "nEventsTotal                              = " << nEventsTotal << std::endl;
+  std::cout << "nEventsFiltered                           = " << nEventsFiltered << std::endl;
+  std::cout << std::endl;
+  std::cout << " Number of events processed               = " << nevt[0] << std::endl;
+  std::cout << " Number of events with a e/mu and 2 jets  = " << nevt[1] << std::endl;
+  std::cout << " Number of events with a J/Psi            = " << nevt[2] << std::endl;
+  std::cout << " Number of events with a J/Psi in a jet   = " << nevt2 << std::endl;
+  std::cout << " Number of events with a D0               = " << nevt[3] << std::endl;
+  std::cout << " Number of events with a mu               = " << nevt[4] << std::endl;
+  std::cout << " Number of events with a D0 and a mu      = " << nevt[5] << std::endl;
+  std::cout << "===================== TestBranches::~TestBranches =========================" << std::endl;
+
+}
+
+
+//
+// member functions
+//
+
+// ------------ method called for each event  ------------
+void
+TestBranches::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
+{
+  ++nevt[0];
+
+  // Count "iso" lepton and jets
+  unsigned int nMus=0;
+  edm::Handle<std::vector<pat::Muon>>  patMus;
+  iEvent.getByLabel("selectedPatMuonsPFlow", patMus);
+  nMus = patMus->size(); 
+
+  unsigned int nEls=0;
+  edm::Handle<std::vector<pat::Electron>>  patEls;
+  iEvent.getByLabel("selectedPatElectronsPFlow", patEls);
+  nEls = patEls->size(); 
+
+  unsigned int nJets=0;
+  edm::Handle<std::vector<pat::Jet>> patJets;
+  iEvent.getByLabel("selectedPatJetsPFlow", patJets);
+  nJets = patJets->size(); 
+
+  if ((nMus > 0 || nEls > 0) && nJets > 1)
+    ++nevt[1];
+
+  unsigned int nPFs=0;
+  edm::Handle <std::vector<reco::PFCandidate>> recoPFs;
+  iEvent.getByLabel("particleFlow", recoPFs);
+  nPFs = recoPFs->size();
+
+  // Count J/psi
+  int nJpsi = 0;
+
+  for (unsigned int j=0; j<nPFs; ++j) {  
+
+    const reco::PFCandidate* pf1 = &((*recoPFs)[j]);
+
+    if (pf1->charge() == 0) continue;
+    if (abs(pf1->pdgId()) != 13) continue;
+    if (pf1->pt() < 1.) continue; // FIXME
+
+    for (unsigned int k = j+1; k < nPFs; ++k) {
+
+      const reco::PFCandidate* pf2 = &((*recoPFs)[k]);
+
+      if (pf1->charge()*pf2->charge() >= 0) continue;
+      if (abs(pf2->pdgId()) != 13) continue;
+      if (pf2->pt() < 1.) continue; // FIXME
+
+      double e  = pf1->energy()+pf2->energy();
+      double px = pf1->px()+pf2->px();
+      double py = pf1->py()+pf2->py();
+      double pz = pf1->pz()+pf2->pz();
+      double m = pow(e,2)-pow(px,2)-pow(py,2)-pow(pz,2);
+      if (m > 0.) m = sqrt(m);
+
+      TLorentzVector p1, p2;
+      p1.SetPtEtaPhiM(pf1->pt(), pf1->eta(), pf1->phi(), 0.);
+      p2.SetPtEtaPhiM(pf2->pt(), pf2->eta(), pf2->phi(), 0.);
+
+      if (m >= 2.8 && m < 3.4 && p1.DeltaR(p2) < 0.5) { // FIXME
+        h_JPsi_Mass->Fill(m);
+        ++nJpsi;
+      }
+    }
+  }
+  if (nJpsi > 0) 
+    ++nevt[2];
+
+  // Count J/psi in a jet
+  int nJpsi2 = 0;
+  for (unsigned int j = 0; j < nJets; ++j) {  
+
+    const pat::Jet* jet = &((*patJets)[j]);
+    const std::vector<reco::PFCandidatePtr>& PFpart = jet->getPFConstituents();
+    unsigned int npfs = PFpart.size(); 
+    for (unsigned int k = 0; k < npfs; k++) {
+
+      if (PFpart[k]->charge() == 0) continue;
+      if (abs(PFpart[k]->pdgId()) != 13) continue;
+      if (PFpart[k]->pt() < 1.) continue; // FIXME
+
+      for (unsigned int l = k+1; l < npfs; ++l) {
+
+        if (PFpart[k]->charge()*PFpart[l]->charge() >= 0) continue;
+        if (abs(PFpart[l]->pdgId()) != 13) continue;
+        if (PFpart[l]->pt() < 1.) continue; // FIXME
+
+        double e  = PFpart[k]->energy()+PFpart[l]->energy();
+        double px = PFpart[k]->px()+PFpart[l]->px();
+        double py = PFpart[k]->py()+PFpart[l]->py();
+        double pz = PFpart[k]->pz()+PFpart[l]->pz();
+        double m = pow(e,2)-pow(px,2)-pow(py,2)-pow(pz,2);
+        if (m > 0.) m = sqrt(m);
+
+        if (m >= 2.8 && m < 3.4) { // FIXME
+          ++nJpsi2;
+        }
+      }
+    }
+  }
+  if (nJpsi2 > 0) 
+    ++nevt2;
+
+  // Count D0
+  int nD0 = 0;
+  std::vector<reco::PFCandidate> myPFs;
+
+  // Sort particles by pT after selection
+  for (unsigned int j = 0; j < nPFs; ++j) {  
+
+    const reco::PFCandidate* pf = &((*recoPFs)[j]);
+
+    if (pf->charge() == 0) continue;
+    if (abs(pf->pdgId()) == 13) continue;
+    if (pf->pt() < 0.2) continue; // FIXME
+    myPFs.push_back(*pf);
+  }
+  sort(myPFs.begin(), myPFs.end(), compareParticlesByPt);
+
+  for (unsigned int j = 0; j < 5; ++j) { // FIXME 
+
+    for (unsigned int k = 0; k < 5; ++k) { // FIXME
+
+      if (j == k) continue;
+      if (myPFs[j].charge()*myPFs[k].charge() > 0) continue;
+
+      double e  = myPFs[j].energy()+myPFs[k].energy();
+      double px = myPFs[j].px()+myPFs[k].px();
+      double py = myPFs[j].py()+myPFs[k].py();
+      double pz = myPFs[j].pz()+myPFs[k].pz();
+      double m = pow(e,2)-pow(px,2)-pow(py,2)-pow(pz,2);
+      if (m > 0.) m = sqrt(m);
+
+      if (m >= 1.5 && m < 2.2) {// FIXME
+        h_D0_Mass->Fill(m);
+        ++nD0;
+      }
+    }
+  }
+
+  if (nD0 > 0) 
+    ++nevt[3];
+
+  // Count non iso mu
+  int nMu = 0;
+
+  for (unsigned int j = 0; j < nJets; ++j) {  
+
+    const pat::Jet* jet = &((*patJets)[j]);
+    const std::vector<reco::PFCandidatePtr>& PFpart = jet->getPFConstituents();
+    unsigned int npfs = PFpart.size(); 
+
+    if (npfs < 2) continue;
+
+    for (unsigned int k = 0; k < npfs; k++) {
+      if (PFpart[k]->charge() == 0) continue;
+      if (abs(PFpart[k]->pdgId()) != 13) continue;
+      if (PFpart[k]->pt() < 1.) continue; // FIXME
+      ++nMu;
+    }
+  }
+
+  if (nMu > 0) 
+    ++nevt[4];
+
+  if (nD0 > 0 && nMu > 0)
+    ++nevt[5];
+
+  // Get (gen) track multiplicity and pT(mu/e) for each jet
+  for (unsigned int j = 0; j < nJets; ++j) {  
+    int nTr = 0;
+
+    const pat::Jet* jet = &((*patJets)[j]);
+    const std::vector<reco::PFCandidatePtr>& PFpart = jet->getPFConstituents();
+    unsigned int npfs = PFpart.size(); 
+    for (unsigned int k = 0; k < npfs; k++) {
+      reco::MuonRef muonRef = PFpart[k]->muonRef();
+      if (muonRef.isNonnull())
+        h_Mu_Pt->Fill(muonRef->pt());
+      reco::GsfElectronRef electronRef = PFpart[k]->gsfElectronRef();
+      if (electronRef.isNonnull())
+        h_El_Pt->Fill(electronRef->pt());
+      reco::TrackRef trackRef = PFpart[k]->trackRef();
+      if (trackRef.isNonnull() && trackRef->pt() > 0.2 && trackRef->eta() < 2.4)
+        nTr++;
+    }
+    h_Tr_N->Fill((double)nTr);
+    if (jet->genJet() != NULL) {
+      const reco::GenJet* genJet = jet->genJet();
+      std::vector<const reco::GenParticle*> GenPart = genJet->getGenConstituents();
+      unsigned int ngcs = GenPart.size(); 
+      int nGenCons = 0;
+      for (unsigned int k = 0; k < ngcs; k++) {
+        if (GenPart[k]->charge() != 0 && GenPart[k]->pt() > 0.2 && GenPart[k]->eta() < 2.4) 
+          nGenCons++;
+      }
+      h_GenCons_N->Fill((double)nGenCons);
+      int nPF = 0;
+      for (unsigned int k = 0; k < npfs; k++) {
+        if (PFpart[k]->charge() != 0 && PFpart[k]->pt() > 0.2 && PFpart[k]->eta() < 2.4)
+          nPF++;
+      }
+      h_PFAss_N->Fill((double)nPF);
+    }
+  }
+}
+
+
+// ------------ method called once each job just before starting event loop  ------------
+void 
+TestBranches::beginJob()
+{
+  edm::Service<TFileService> fs;
+  h_D0_Mass    = fs->make<TH1D>("h_D0_Mass", "h_D0_Mass", 70, 1.5, 2.2);
+  h_JPsi_Mass  = fs->make<TH1D>("h_JPsi_Mass", "h_JPsi_Mass", 60, 2.8, 3.4);
+  h_Mu_Pt      = fs->make<TH1D>("h_Mu_Pt", "h_Mu_pT", 100, 0., 100.);
+  h_El_Pt      = fs->make<TH1D>("h_El_Pt", "h_El_pT", 100, 0., 100.);
+  h_Tr_N       = fs->make<TH1D>("h_Tr_N", "h_Tr_N", 50, 0, 50.);
+  h_GenCons_N  = fs->make<TH1D>("h_GenCons_N", "h_GenCons_N", 50, 0, 50.);
+  h_PFAss_N    = fs->make<TH1D>("h_PFAss_N", "h_PFAss_N", 50, 0, 50.);
+}
+
+// ------------ method called once each job just after ending the event loop  ------------
+void 
+TestBranches::endJob() 
+{
+}
+
+// ------------ method called when starting to processes a run  ------------
+void 
+TestBranches::beginRun(edm::Run const&, edm::EventSetup const&)
+{
+}
+
+// ------------ method called when ending the processing of a run  ------------
+void 
+TestBranches::endRun(edm::Run const&, edm::EventSetup const&)
+{
+}
+
+// ------------ method called when starting to processes a luminosity block  ------------
+void 
+TestBranches::beginLuminosityBlock(edm::LuminosityBlock const&, edm::EventSetup const&)
+{
+}
+
+// ------------ method called when ending the processing of a luminosity block  ------------
+void 
+TestBranches::endLuminosityBlock(edm::LuminosityBlock const& lumi, edm::EventSetup const& setup)
+{
+// Total number of events is the sum of the events in each of these luminosity blocks
+edm::Handle<edm::MergeableCounter> nEventsTotalCounter;
+lumi.getByLabel("nEventsTotal", nEventsTotalCounter);
+nEventsTotal += nEventsTotalCounter->value;
+
+edm::Handle<edm::MergeableCounter> nEventsFilteredCounter;
+lumi.getByLabel("nEventsFiltered", nEventsFilteredCounter);
+nEventsFiltered += nEventsFilteredCounter->value;
+}
+
+// ------------ method fills 'descriptions' with the allowed parameters for the module  ------------
+void
+TestBranches::fillDescriptions(edm::ConfigurationDescriptions& descriptions) {
+  //The following says we do not know what parameters are allowed so do no validation
+  // Please change this to state exactly what you do use, even if it is no parameters
+  edm::ParameterSetDescription desc;
+  desc.setUnknown();
+  descriptions.addDefault(desc);
+}
+
+//define this as a plug-in
+DEFINE_FWK_MODULE(TestBranches);

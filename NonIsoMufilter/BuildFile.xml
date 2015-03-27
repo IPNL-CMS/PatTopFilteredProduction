@@ -1,0 +1,14 @@
+<use   name="FWCore/Utilities"/>
+<use   name="FWCore/PluginManager"/>
+<use   name="FWCore/Framework"/>
+<use   name="DataFormats/Common"/>
+<use   name="clhep"/>
+<use   name="boost"/>
+<use   name="FWCore/ParameterSet"/>
+<use   name="rootcintex"/>
+<use   name="root"/>
+<use   name="DataFormats/TrackReco"/>
+<use   name="PhysicsTools/PatAlgos"/>
+<use   name="CommonTools/CandUtils"/>
+<lib   name="MathMore"/>
+<flags EDM_PLUGIN="1"/>

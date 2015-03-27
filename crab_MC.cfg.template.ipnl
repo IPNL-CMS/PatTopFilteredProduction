@@ -1,0 +1,26 @@
+from WMCore.Configuration import Configuration
+config = Configuration()
+
+config.section_("General")
+config.General.requestName = @taskname@
+config.General.workArea = @outputdir@
+config.General.transferLogs = True
+
+config.section_("JobType")
+config.JobType.pluginName = 'Analysis'
+config.JobType.psetName = @psetname@
+config.JobType.pyCfgParams = @globaltag@
+
+config.section_("Data")
+config.Data.inputDataset = @datasetname@
+config.Data.inputDBS = 'phys03'
+config.Data.splitting = 'FileBased'
+config.Data.unitsPerJob = FIXME
+config.Data.outLFN = @username@  
+config.Data.publication = True
+config.Data.publishDBS = 'phys03'
+config.Data.publishDataName = @publishname@
+
+config.section_("Site")
+config.Site.storageSite = 'T3_FR_IPNL'
+#config.Site.whitelist = ['T3_FR_IPNL']
