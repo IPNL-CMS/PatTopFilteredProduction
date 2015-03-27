@@ -8,7 +8,7 @@ if len(options.globalTag) == 0:
   raise Exception("You _must_ pass a globalTag options to this script. Use --help for more informations")
 
 from patTuple_PF2PAT_common_cfg import createPATProcess
-process = createPATProcess(False, options.globalTag)
+process = createPATProcess(True, options.globalTag)
 # process = createPATProcess(True, "START53_V27")
 
 process.source.fileNames = [
