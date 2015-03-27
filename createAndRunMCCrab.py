@@ -23,8 +23,8 @@ version = 1
 
 datasets = [
     # Standard ttbar
-    ["/TTJets_FullLeptMGDecays_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A-v2/AODSIM", "TTJets_FullLeptMGDecays", "START53_V27"],
-    ["/TTJets_SemiLeptMGDecays_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A_ext-v1/AODSIM", "TTJets_SemiLeptMGDecays", "START53_V27"],
+    ["/TTJets_FullLeptMGDecays_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7C-v2/AODSIM", "TTJets_FullLeptMGDecays", "START53_V27"],
+    ["/TTJets_SemiLeptMGDecays_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19_ext1-v1/AODSIM", "TTJets_SemiLeptMGDecays", "START53_V27"],
     ["/TTJets_HadronicMGDecays_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A_ext-v1/AODSIM", "TTJets_HadronicMGDecays", "START53_V27"],
     # W + jets
     #["/WJetsToLNu_TuneZ2Star_8TeV-madgraph-tarball/Summer12_DR53X-PU_S10_START53_V7A-v2/AODSIM", "WJetsToLNu", "START53_V27"],

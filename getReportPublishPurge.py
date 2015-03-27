@@ -5,7 +5,9 @@ import os, copy, datetime, pwd, re
 from optparse import OptionParser
 parser = OptionParser()
 parser.add_option("-d", "--date", dest="date", type="string", default=False, help="date when the task was submitted")
+parser.add_option("", "--submit", action="store_true", dest="submit", default=False, help="submit all tasks")
 parser.add_option("", "--status", action="store_true", dest="status", default=False, help="status of all tasks")
+parser.add_option("", "--log", action="store_true", dest="log", default=False, help="getlog of all tasks")
 parser.add_option("", "--get", action="store_true", dest="get", default=False, help="getoutput of all tasks")
 parser.add_option("", "--report", action="store_true", dest="report", default=False, help="report all tasks")
 parser.add_option("", "--publish", action="store_true", dest="publish", default=False, help="publish all tasks")
@@ -13,31 +15,46 @@ parser.add_option("", "--purge", action="store_true", dest="purge", default=Fals
 parser.add_option("", "--kill", action="store_true", dest="kill", default=False, help="kill all tasks")
 (options, args) = parser.parse_args()
 
-if not options.date or not os.path.isdir(os.path.join("crab_tasks", options.date)):
-    parser.error("you must specify a valid date")
-rootName = os.path.join("crab_tasks", options.date)
-if not options.status and not options.get and not options.report and not options.publish and not options.purge and not options.kill:
+if not options.submit and not options.status and not options.log and not options.get and not options.report and not options.publish and not options.purge and not options.kill:
     parser.error("you must specify a valid action")
     
-crabFolders = [name for name in os.listdir(rootName) if os.path.isdir(os.path.join(rootName, name))]
+if options.submit:
 
-for crabFolder in crabFolders:
+    if not options.date or not os.path.isdir(options.date):
+        parser.error("you must specify a valid date")
 
-    folderName = os.path.join(rootName, crabFolder)
+    crabCfgs = [name for name in os.listdir(options.date) if (name.startswith('crab_') and name.endswith('.py'))]
 
-    if options.status:
-        cmd = "crab status " + folderName
-    if options.get:
-        cmd = "crab getoutput " + folderName
-    if options.report:
-        cmd = "crab report " + folderName
-    if options.publish:
-        cmd = "crab publish " + folderName + " >& publish_" + os.path.join(options.date,folderName) + ".log"
-    if options.purge:
-        cmd = "crab purge --cache " + folderName
-    if options.kill:
-        cmd = "crab kill " + folderName
+    for crabCfg in crabCfgs:
+        cmd = "crab submit " + crabCfg
+        os.system(cmd)
+
+else:        
+
+    if not options.date or not os.path.isdir(os.path.join("crab_tasks", options.date)):
+        parser.error("you must specify a valid date")
+    
+    rootName = os.path.join("crab_tasks", options.date)
+    crabFolders = [name for name in os.listdir(rootName) if os.path.isdir(os.path.join(rootName, name))]
+
+    for crabFolder in crabFolders:
+
+        folderName = os.path.join(rootName, crabFolder)
+
+        if options.status:
+            cmd = "crab status " + folderName
+        if options.log:
+            cmd = "crab getlog " + folderName
+        if options.get:
+            cmd = "crab getoutput " + folderName
+        if options.report:
+            cmd = "crab report " + folderName
+        if options.publish:
+            cmd = "crab publish " + folderName + " >& publish_" + os.path.join(options.date,folderName) + ".log"
+        if options.purge:
+            cmd = "crab purge --cache " + folderName
+        if options.kill:
+            cmd = "crab kill " + folderName
         
-    # os.system(cmd)
-    echo cmd
+        os.system(cmd)
 
