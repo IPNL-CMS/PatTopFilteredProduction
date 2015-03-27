@@ -3,7 +3,7 @@ How-to use PatTopFilteredProduction
 
 This is a PAT configuration adapted for Top analysis, skimming events with an isolated electron/muon, 2 jets, and a non isolated muon.
 
-## Instructions
+## Setup instructions
 
 ### Step 1 - Setup dependencies
 
@@ -29,11 +29,11 @@ In the `src` directory of the CMSSW package, run
   [2]: https://github.com/IPNL-CMS/PatTopFilteredProduction/blob/master/POST_INSTALL.md
 
 
-# How-to use and run Pat
+## Use of this tool
 
 Once Pat has been setup, you can start using the tool as indicated below.
 
-## Specify the datasets you want to run on
+### Specify the datasets you want to run on
 
 Do not forget to source Crab3 (i.e. /cvmfs/cms.cern.ch/crab3/crab.sh)
 
@@ -45,7 +45,7 @@ List the datasets and [globalTags](https://twiki.cern.ch/twiki/bin/view/CMSPubli
 
 List the primary dataset, the [globalTag](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideFrontierConditions#Winter13_2012_A_B_C_D_datasets_r), the [run range](https://twiki.cern.ch/twiki/bin/view/CMS/PdmV2012Analysis) in createAndRunDataCrab.py, and the [golden Json file](https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmV2012Analysis#Analysis_using_the_Golden_JSON_f). Adapt the number of lumi sections per job in crab_data.cfg.template.ipnl.
 
-## Run your code with crab
+### Run your code with crab
 
 Create your crab configuration files `.cfg` and submit your jobs by running the following command:
 
@@ -59,7 +59,7 @@ PatTopFilteredProduction> ./createAndRunMCCrab.py --run
 PatTopFilteredProduction> ./createAndRunDataCrab.py --run
 ```
 
-## Once your crab jobs are done
+### Once your crab jobs are done
 
 You can use getReportPublishPurge.py to handle the your crab tasks.
 
