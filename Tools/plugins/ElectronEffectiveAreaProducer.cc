@@ -33,7 +33,7 @@ Implementation:
 
 #include <DataFormats/EgammaCandidates/interface/GsfElectron.h>
 
-#include "PatTopProduction/Tools/interface/ElectronEffectiveArea.h"
+#include "PatTopFilteredProduction/Tools/interface/ElectronEffectiveArea.h"
 
 class ElectronEffectiveAreaProducer: public edm::EDProducer {
   public:

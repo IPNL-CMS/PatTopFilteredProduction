@@ -214,7 +214,7 @@ def createPATProcess(runOnMC, globalTag):
         process.kt6PFJetsForIsolation.Rho_EtaMax = cms.double(2.5)
 
     # Compute effective areas for correcting isolation
-    process.load("PatTopProduction.Tools.electronEffectiveAreaProducer_cfi")
+    process.load("PatTopFilteredProduction.Tools.electronEffectiveAreaProducer_cfi")
 
     process.elEffectiveAreas03.src = cms.InputTag("pfSelectedElectrons" + postfix)
     if runOnMC:

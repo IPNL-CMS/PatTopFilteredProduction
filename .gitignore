@@ -4,6 +4,7 @@
 *.cfg
 *crab_data*
 *crab_MC*
+*.pyc
 *.swp
 *.root
 */
