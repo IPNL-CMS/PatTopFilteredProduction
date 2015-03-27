@@ -1,0 +1,10 @@
+*.txt
+*.log
+*.pyc
+*.cfg
+*crab_data*
+*crab_MC*
+*.swp
+*.root
+*/
+!/configs

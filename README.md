@@ -25,8 +25,8 @@ In the `src` directory of the CMSSW package, run
 
     scram b -j8
 
-  [1]: https://github.com/IPNL-CMS/PatTopFilteredProduction/DEPENDENCIES.md
-  [2]: https://github.com/IPNL-CMS/PatTopFilteredProduction/POST_INSTALL.md
+  [1]: https://github.com/IPNL-CMS/PatTopFilteredProduction/blob/master/DEPENDENCIES.md
+  [2]: https://github.com/IPNL-CMS/PatTopFilteredProduction/blob/master/POST_INSTALL.md
 
 
 # How-to use and run Pat
