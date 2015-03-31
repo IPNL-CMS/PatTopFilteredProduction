@@ -4,8 +4,8 @@ Dependencies
 ## CMSSW
 
     export SCRAM_ARCH=slc6_amd64_gcc472
-    cmsrel CMSSW_5_3_26
-    cd CMSSW_5_3_26
+    cmsrel CMSSW_5_3_27
+    cd CMSSW_5_3_27
     cmsenv
 
     cd src/

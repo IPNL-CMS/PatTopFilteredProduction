@@ -15,7 +15,7 @@ config.section_("Data")
 config.Data.inputDataset = @datasetname@
 config.Data.inputDBS = 'global'
 config.Data.splitting = 'FileBased'
-config.Data.unitsPerJob = FIXME
+config.Data.unitsPerJob = 200
 config.Data.outLFN = @username@  
 config.Data.publication = True
 config.Data.publishDBS = 'phys03'
