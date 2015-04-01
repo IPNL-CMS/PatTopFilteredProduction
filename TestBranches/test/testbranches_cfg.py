@@ -10,6 +10,8 @@ process.source = cms.Source("PoolSource",
     # replace 'myfile.root' with the source file you want to use
     fileNames = cms.untracked.vstring(
         'file:../../patTuple.root'
+        #'file:../../test/patTupleForExtractorTests_1lepton_2jets_1noisomu_ttbarsl.root'
+        #'file:../../test/patTupleForTests_1lepton_2jets_1noisomu_vs_2leptons_1jet_1nonisomu_ttbarsl.root'
     )
 )
 

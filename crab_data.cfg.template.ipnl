@@ -9,14 +9,13 @@ config.General.transferLogs = True
 config.section_("JobType")
 config.JobType.pluginName = 'Analysis'
 config.JobType.psetName = @psetname@
-config.JobType.pyCfgParams = ["globalTag=@globaltag@"]
 
 config.section_("Data")
 config.Data.inputDataset = @datasetname@
 config.Data.inputDBS = 'global'
 config.Data.lumiMask = @jsonfile@ 
 config.Data.splitting = 'LumiBased'
-config.Data.unitsPerJob = 100
+config.Data.unitsPerJob = @datasetquanta@
 config.Data.outLFN = @username@  
 config.Data.publication = True
 config.Data.publishDBS = 'phys03'

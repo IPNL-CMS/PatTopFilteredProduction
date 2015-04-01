@@ -152,9 +152,11 @@ NonIsoMufilter::filter(edm::Event& iEvent, const edm::EventSetup& iSetup)
       ++nMu;
     }
     // Warn if several non iso mu in a jet
+    /*
     if (nMu > 1) {
       cout << "Number of non iso mu found = " << nMu   << endl;
     }
+    */
     
   }
 

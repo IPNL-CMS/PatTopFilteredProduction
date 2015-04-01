@@ -219,9 +219,11 @@ FlagProducer::produce(edm::Event& iEvent, const edm::EventSetup& iSetup)
           }
         } // myD0PFs[k2] loop
         // Warn if several D0 for one PF
+        /*
         if (nD0 > 2) {
           std::cout << "Number of D0 found = " << nD0 << std::endl;
         }
+        */
       } // myD0PFs[k1] loop
 
       // take care of Jpsi
@@ -245,9 +247,11 @@ FlagProducer::produce(edm::Event& iEvent, const edm::EventSetup& iSetup)
           }
         } // myJpsiPFs[j2] loop
         // Warn if several JPsi for a PF
+        /*
         if (nJpsi > 1) {
           std::cout << "Number of J/Psi found = " << nJpsi << std::endl;
         }
+        */
       } // myJpsiPFs[j1] loop
 
     } // jet loop

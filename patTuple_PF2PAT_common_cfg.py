@@ -361,7 +361,7 @@ def createPATProcess(runOnMC, globalTag):
 
     # Lepton counter filter
     from PhysicsTools.PatAlgos.selectionLayer1.leptonCountFilter_cfi import *
-    process.leptonCount = countPatLeptons.clone(
+    process.leptonCount1 = countPatLeptons.clone(
         electronSource = "selectedPatElectronsPFlow",
         muonSource     = "selectedPatMuonsPFlow",
         tauSource      = "dummy",
@@ -371,10 +371,21 @@ def createPATProcess(runOnMC, globalTag):
         minNumber = 1,
         maxNumber = 999999
         )
+    process.leptonCount2 = countPatLeptons.clone(
+        electronSource = "selectedPatElectronsPFlow",
+        muonSource     = "selectedPatMuonsPFlow",
+        tauSource      = "dummy",
+        countElectrons = True,
+        countMuons     = True,
+        countTaus      = False,
+        minNumber = 2,
+        maxNumber = 999999
+        )
 
     #Jet counter filter
     from PhysicsTools.PatAlgos.selectionLayer1.jetCountFilter_cfi import *
-    process.jetCount = countPatJets.clone(src = 'selectedPatJetsPFlow', minNumber = 2, maxNumber = 999999)
+    process.jetCount2 = countPatJets.clone(src = 'selectedPatJetsPFlow', minNumber = 2, maxNumber = 999999)
+    process.jetCount1 = countPatJets.clone(src = 'selectedPatJetsPFlow', minNumber = 1, maxNumber = 999999)
     
     ##################
 
@@ -385,15 +396,27 @@ def createPATProcess(runOnMC, globalTag):
         process.patSeq *
         process.puJetIdSqeuenceChs *
         process.QuarkGluonTagger *
-        process.leptonCount *
-        process.jetCount *
+        process.leptonCount1 *
+        process.jetCount2 *
+        process.nonisomufilter *
+        process.jpsid0flag *
+        process.nEventsFiltered
+        )
+    process.palt = cms.Path(
+        process.nEventsTotal *
+        process.filtersSeq *
+        process.patSeq *
+        process.puJetIdSqeuenceChs *
+        process.QuarkGluonTagger *
+        process.leptonCount2 *
+        process.jetCount1 *
         process.nonisomufilter *
         process.jpsid0flag *
         process.nEventsFiltered
         )
 
     process.out.SelectEvents = cms.untracked.PSet(
-        SelectEvents = cms.vstring('pmu')
+        SelectEvents = cms.vstring('pmu', 'palt')
         )
 
     # Add PF2PAT output to the created file
