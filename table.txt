@@ -1,105 +1,340 @@
 ===================
 Monte Carlo samples
 ===================
+
+~~~ Standard ttbar ~~~
+
 Crab task name: 150401_181647:ebouvier_crab_MC_PF2PAT_TTJets_SemiLeptMGDecays
-Number of events processed: 
+Number of events processed: 31,004,465 ? 
+Number of events filtered:  
 Publishing name: /TTJets_SemiLeptMGDecays_8TeV-madgraph-tauola/ebouvier-TTJets_SemiLeptMGDecays_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER 
 -------------------
+Crab task name: 150402_090504:ebouvier_crab_MC_PF2PAT_TTJets_FullLeptMGDecays
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name: 150402_090657:ebouvier_crab_MC_PF2PAT_TTJets_HadronicMGDecays
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+
+~~~ W + jets  ~~~
+
+Crab task name: 150402_093918:ebouvier_crab_MC_PF2PAT_W1JetsToLNu
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name: 150402_094117:ebouvier_crab_MC_PF2PAT_W2JetsToLNu
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name: 150402_094315:ebouvier_crab_MC_PF2PAT_W3JetsToLNu
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name: 150402_094521:ebouvier_crab_MC_PF2PAT_W4JetsToLNu
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+
+~~~ Z + jets ~~~
+
+Crab task name: 150402_094804:ebouvier_crab_MC_PF2PAT_DY1JetsToLL_M-50
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name: 150402_095025:ebouvier_crab_MC_PF2PAT_DY2JetsToLL_M-50
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name: 150402_095211:ebouvier_crab_MC_PF2PAT_DY3JetsToLL_M-50
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name: 150402_095400:ebouvier_crab_MC_PF2PAT_DY4JetsToLL_M-50
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+
+~~~ Diboson ~~~
+
+Crab task name: 150402_095739:ebouvier_crab_MC_PF2PAT_WW-incl
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name: 150402_095928:ebouvier_crab_MC_PF2PAT_WZ-incl
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name: 150402_100130:ebouvier_crab_MC_PF2PAT_ZZ-incl
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+
+~~~ Other ttbar ~~~
+
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
+Publishing name:
+
+~~~ Single top ~~~
+
+~~~~~~ central
+Crab task name:
+Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
+Publishing name:
+~~~~~~ top mass variations for t channel
+Crab task name:
+Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
 Crab task name:
 Number of events processed:
+Number of events filtered: 
 Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+~~~~~~ 166.5 GeV/c²
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+~~~~~~ 178.5 GeV/c²
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+-------------------
+Crab task name:
+Number of events processed:
+Number of events filtered: 
+Publishing name:
+
+
 ===================
 Primary datasets
 ===================
+
+~~~ Muonic stream ~~~
+
 Crab task name: 150401_183618:ebouvier_crab_Data_PF2PAT_MuHad_Run2012A-22Jan2013
-Number of events processed:
+Number of events processed: 8,633,430
+Number of events filtered: 175,574
 Publishing name: /MuHad/ebouvier-MuHad_Run2012A-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
-Crab task name:
+Crab task name: 150402_090940:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012B-22Jan2013
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
-Crab task name:
+Crab task name: 150402_091145:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012C-22Jan2013
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
-Crab task name:
+Crab task name: 150402_091357:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012D-22Jan2013
 Number of events processed:
+Number of events filtered: 
+Publishing name:
+
+~~~ Electronic stream ~~~
+
+Crab task name: 150402_092250:ebouvier_crab_Data_PF2PAT_ElectronHad_Run2012A-22Jan2013
+Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
-Crab task name:
+Crab task name: 150402_092516:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012B-22Jan2013
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
-Crab task name:
+Crab task name: 150402_093032:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012C-22Jan2013
 Number of events processed:
+Number of events filtered: 
 Publishing name:
 -------------------
-Crab task name:
+Crab task name: 150402_093627:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012D-22Jan2013
 Number of events processed:
+Number of events filtered: 
 Publishing name:
--------------------
-Crab task name:
-Number of events processed:
-Publishing name:
--------------------
