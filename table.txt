@@ -24,51 +24,51 @@ Publishing name:
 Crab task name: 150402_093918:ebouvier_crab_MC_PF2PAT_W1JetsToLNu
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /W1JetsToLNu_TuneZ2Star_8TeV-madgraph/ebouvier-W1JetsToLNu_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_094117:ebouvier_crab_MC_PF2PAT_W2JetsToLNu
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /W2JetsToLNu_TuneZ2Star_8TeV-madgraph/ebouvier-W2JetsToLNu_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_094315:ebouvier_crab_MC_PF2PAT_W3JetsToLNu
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /W3JetsToLNu_TuneZ2Star_8TeV-madgraph/ebouvier-W3JetsToLNu_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_094521:ebouvier_crab_MC_PF2PAT_W4JetsToLNu
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /W4JetsToLNu_TuneZ2Star_8TeV-madgraph/ebouvier-W4JetsToLNu_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 
 ~~~ Z + jets ~~~
 
 Crab task name: 150402_094804:ebouvier_crab_MC_PF2PAT_DY1JetsToLL_M-50
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /DY1JetsToLL_M-50_TuneZ2Star_8TeV-madgraph/ebouvier-DY1JetsToLL_M-50_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_095025:ebouvier_crab_MC_PF2PAT_DY2JetsToLL_M-50
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /DY2JetsToLL_M-50_TuneZ2Star_8TeV-madgraph/ebouvier-DY2JetsToLL_M-50_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_095211:ebouvier_crab_MC_PF2PAT_DY3JetsToLL_M-50
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /DY3JetsToLL_M-50_TuneZ2Star_8TeV-madgraph/ebouvier-DY3JetsToLL_M-50_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_095400:ebouvier_crab_MC_PF2PAT_DY4JetsToLL_M-50
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /DY4JetsToLL_M-50_TuneZ2Star_8TeV-madgraph/ebouvier-DY4JetsToLL_M-50_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 
 ~~~ Diboson ~~~
 
 Crab task name: 150402_095739:ebouvier_crab_MC_PF2PAT_WW-incl
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /WW_TuneZ2star_8TeV_pythia6_tauola/ebouvier-WW-incl_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_095928:ebouvier_crab_MC_PF2PAT_WZ-incl
 Number of events processed:
@@ -305,36 +305,36 @@ Publishing name: /MuHad/ebouvier-MuHad_Run2012A-22Jan2013_15Apr01-v1-0a0811ab37a
 Crab task name: 150402_090940:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012B-22Jan2013
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /SingleMu/ebouvier-SingleMu_Run2012B-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_091145:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012C-22Jan2013
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /SingleMu/ebouvier-SingleMu_Run2012C-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_091357:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012D-22Jan2013
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /SingleMu/ebouvier-SingleMu_Run2012D-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 
 ~~~ Electronic stream ~~~
 
 Crab task name: 150402_092250:ebouvier_crab_Data_PF2PAT_ElectronHad_Run2012A-22Jan2013
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /ElectronHad/ebouvier-ElectronHad_Run2012A-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_092516:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012B-22Jan2013
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /SingleElectron/ebouvier-SingleElectron_Run2012B-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_093032:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012C-22Jan2013
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /SingleElectron/ebouvier-SingleElectron_Run2012C-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_093627:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012D-22Jan2013
 Number of events processed:
 Number of events filtered: 
-Publishing name:
+Publishing name: /SingleElectron/ebouvier-SingleElectron_Run2012D-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
