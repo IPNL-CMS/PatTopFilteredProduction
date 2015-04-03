@@ -17,6 +17,9 @@ parser.add_option("", "--kill", action="store_true", dest="kill", default=False,
 
 if not options.submit and not options.status and not options.log and not options.get and not options.report and not options.publish and not options.purge and not options.kill:
     parser.error("you must specify a valid action")
+
+if not os.path.isdir("log"):
+    os.mkdir("log/")
     
 if options.submit:
 
@@ -26,7 +29,7 @@ if options.submit:
     crabCfgs = [name for name in os.listdir(options.date) if (name.startswith('crab_') and name.endswith('.py'))]
 
     for crabCfg in crabCfgs:
-        cmd = "crab submit " + crabCfg
+        cmd = "crab submit " + crabCfg + " >& log/submit_" + crabCfg.strip("crab_").rstrip(".py") + ".log" 
         os.system(cmd)
 
 else:        
@@ -42,19 +45,19 @@ else:
         folderName = os.path.join(rootName, crabFolder)
 
         if options.status:
-            cmd = "crab status " + folderName
+            cmd = "crab status " + folderName + " >& log/status_" + folderName.strip("crab_tasks/15Apr01/") + ".log"
         if options.log:
-            cmd = "crab getlog " + folderName
+            cmd = "crab getlog " + folderName + " >& log/getlog_" + folderName.strip("crab_tasks/15Apr01/") + ".log"
         if options.get:
-            cmd = "crab getoutput " + folderName
+            cmd = "crab getoutput " + folderName + " >& log/getouput_" + folderName.strip("crab_tasks/15Apr01/") + ".log"
         if options.report:
-            cmd = "crab report " + folderName
+            cmd = "crab report " + folderName + " >& log/report_" + folderName.strip("crab_tasks/15Apr01/") + ".log"
         if options.publish:
-            cmd = "crab publish " + folderName + " >& publish_" + os.path.join(options.date,folderName) + ".log"
+            cmd = "crab publish " + folderName + " >& log/publish_" + folderName.strip("crab_tasks/15Apr01/") + ".log"
         if options.purge:
-            cmd = "crab purge --cache " + folderName
+            cmd = "crab purge --cache " + folderName + " >& log/purge_" + folderName.strip("crab_tasks/15Apr01/") + ".log"
         if options.kill:
-            cmd = "crab kill " + folderName
+            cmd = "crab kill " + folderName + " >& log/kill_" + folderName.strip("crab_tasks/15Apr01/") + ".log"
         
         os.system(cmd)
 
