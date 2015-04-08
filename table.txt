@@ -5,16 +5,16 @@ Monte Carlo samples
 ~~~ Standard ttbar ~~~
 
 Crab task name: 150401_181647:ebouvier_crab_MC_PF2PAT_TTJets_SemiLeptMGDecays
-Number of events processed: 31,004,465 ? 
-Number of events filtered:  
+Number of events processed: 31004465  
+Number of events filtered: 5329126 
 Publishing name: /TTJets_SemiLeptMGDecays_8TeV-madgraph-tauola/ebouvier-TTJets_SemiLeptMGDecays_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER 
 -------------------
 Crab task name: 150402_090504:ebouvier_crab_MC_PF2PAT_TTJets_FullLeptMGDecays
-Number of events processed:
-Number of events filtered: 
-Publishing name:
+Number of events processed: 12011428
+Number of events filtered: 3479221
+Publishing name: /TTJets_FullLeptMGDecays_8TeV-madgraph-tauola/ebouvier-TTJets_FullLeptMGDecays_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
-Crab task name: 150402_090657:ebouvier_crab_MC_PF2PAT_TTJets_HadronicMGDecays
+Crab task name: 150408_060621:ebouvier_crab_MC_PF2PAT_TTJets_HadronicMGDecays 
 Number of events processed:
 Number of events filtered: 
 Publishing name:
@@ -22,77 +22,77 @@ Publishing name:
 ~~~ W + jets  ~~~
 
 Crab task name: 150402_093918:ebouvier_crab_MC_PF2PAT_W1JetsToLNu
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 23141598
+Number of events filtered: 383155 
 Publishing name: /W1JetsToLNu_TuneZ2Star_8TeV-madgraph/ebouvier-W1JetsToLNu_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_094117:ebouvier_crab_MC_PF2PAT_W2JetsToLNu
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 34044921
+Number of events filtered: 833413
 Publishing name: /W2JetsToLNu_TuneZ2Star_8TeV-madgraph/ebouvier-W2JetsToLNu_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_094315:ebouvier_crab_MC_PF2PAT_W3JetsToLNu
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 15539503
+Number of events filtered: 502624
 Publishing name: /W3JetsToLNu_TuneZ2Star_8TeV-madgraph/ebouvier-W3JetsToLNu_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_094521:ebouvier_crab_MC_PF2PAT_W4JetsToLNu
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 13382803
+Number of events filtered: 584898
 Publishing name: /W4JetsToLNu_TuneZ2Star_8TeV-madgraph/ebouvier-W4JetsToLNu_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 
 ~~~ Z + jets ~~~
 
 Crab task name: 150402_094804:ebouvier_crab_MC_PF2PAT_DY1JetsToLL_M-50
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 24045248
+Number of events filtered: 1665594
 Publishing name: /DY1JetsToLL_M-50_TuneZ2Star_8TeV-madgraph/ebouvier-DY1JetsToLL_M-50_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_095025:ebouvier_crab_MC_PF2PAT_DY2JetsToLL_M-50
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 21852156
+Number of events filtered: 1938035
 Publishing name: /DY2JetsToLL_M-50_TuneZ2Star_8TeV-madgraph/ebouvier-DY2JetsToLL_M-50_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_095211:ebouvier_crab_MC_PF2PAT_DY3JetsToLL_M-50
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 11015445 
+Number of events filtered: 1176721
 Publishing name: /DY3JetsToLL_M-50_TuneZ2Star_8TeV-madgraph/ebouvier-DY3JetsToLL_M-50_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150402_095400:ebouvier_crab_MC_PF2PAT_DY4JetsToLL_M-50
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 6402827 
+Number of events filtered: 832146
 Publishing name: /DY4JetsToLL_M-50_TuneZ2Star_8TeV-madgraph/ebouvier-DY4JetsToLL_M-50_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 
 ~~~ Diboson ~~~
 
-Crab task name: 150402_095739:ebouvier_crab_MC_PF2PAT_WW-incl
+Crab task name: 150408_063316:ebouvier_crab_MC_PF2PAT_WW-incl 
 Number of events processed:
 Number of events filtered: 
-Publishing name: /WW_TuneZ2star_8TeV_pythia6_tauola/ebouvier-WW-incl_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
+Publishing name: 
 -------------------
-Crab task name: 150402_095928:ebouvier_crab_MC_PF2PAT_WZ-incl
+Crab task name: 150408_062733:ebouvier_crab_MC_PF2PAT_ZZ-incl
 Number of events processed:
 Number of events filtered: 
 Publishing name:
 -------------------
-Crab task name: 150402_100130:ebouvier_crab_MC_PF2PAT_ZZ-incl
+Crab task name: 150408_061949:ebouvier_crab_MC_PF2PAT_WZ-incl
 Number of events processed:
 Number of events filtered: 
 Publishing name:
 
 ~~~ Other ttbar ~~~
 
-Crab task name:
+Crab task name: 150408_065514:ebouvier_crab_MC_PF2PAT_TTWJets 
 Number of events processed:
 Number of events filtered: 
 Publishing name:
 -------------------
-Crab task name:
+Crab task name: 150408_065729:ebouvier_crab_MC_PF2PAT_TTWWJets 
 Number of events processed:
 Number of events filtered: 
 Publishing name:
 -------------------
-Crab task name:
+Crab task name: 150408_070416:ebouvier_crab_MC_PF2PAT_TTZJets 
 Number of events processed:
 Number of events filtered: 
 Publishing name:
@@ -100,15 +100,15 @@ Publishing name:
 ~~~ Single top ~~~
 
 ~~~~~~ central
-Crab task name:
-Number of events processed:
-Number of events filtered: 
-Publishing name:
+Crab task name: 150405_152400:ebouvier_crab_MC_PF2PAT_Tbar_tW-channel
+Number of events processed: 493460
+Number of events filtered: 41720
+Publishing name: /Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola/ebouvier-Tbar_tW-channel_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
-Crab task name:
-Number of events processed:
-Number of events filtered: 
-Publishing name:
+Crab task name: 150405_151659:ebouvier_crab_MC_PF2PAT_T_tW-channel
+Number of events processed: 497658
+Number of events filtered: 41917
+Publishing name: /T_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola/ebouvier-T_tW-channel_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name:
 Number of events processed:
@@ -298,8 +298,8 @@ Primary datasets
 ~~~ Muonic stream ~~~
 
 Crab task name: 150401_183618:ebouvier_crab_Data_PF2PAT_MuHad_Run2012A-22Jan2013
-Number of events processed: 8,633,430
-Number of events filtered: 175,574
+Number of events processed: 7329580
+Number of events filtered: 175574
 Publishing name: /MuHad/ebouvier-MuHad_Run2012A-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_090940:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012B-22Jan2013
@@ -320,8 +320,8 @@ Publishing name: /SingleMu/ebouvier-SingleMu_Run2012D-22Jan2013_15Apr01-v1-0a081
 ~~~ Electronic stream ~~~
 
 Crab task name: 150402_092250:ebouvier_crab_Data_PF2PAT_ElectronHad_Run2012A-22Jan2013
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 7455591
+Number of events filtered: 124054
 Publishing name: /ElectronHad/ebouvier-ElectronHad_Run2012A-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_092516:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012B-22Jan2013
