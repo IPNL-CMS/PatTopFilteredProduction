@@ -47,7 +47,7 @@ List the primary dataset, the [globalTag](https://twiki.cern.ch/twiki/bin/view/C
 
 ### Run your code with crab
 
-Create your crab configuration files `.cfg` and submit your jobs by running the following command:
+Create your crab configuration files and submit your jobs by running the following command:
 
 **for MC:**
 ```bash
@@ -61,7 +61,7 @@ PatTopFilteredProduction> ./createAndRunDataCrab.py --run
 
 ### Once your crab jobs are done
 
-You can use getReportPublishPurge.py to handle the your crab tasks.
+You can use getReportPublishPurge.py to handle your crab tasks.
 
 
 ### Especially for data
