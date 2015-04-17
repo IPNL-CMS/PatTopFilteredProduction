@@ -63,26 +63,29 @@ PatTopFilteredProduction> ./createAndRunDataCrab.py --run
 
 You can use getReportPublishPurge.py to handle the your crab tasks.
 
-### Especially for MC
-
-You can compute the real number of processed events (which can be different from the number of generated AOD events or the number of events at the end of Pat obtained by the `crab -publish` command) using the following command:
-```bash
-PatTopFilteredProduction> curl -o crabNumberOfProcessedEvents.py https://raw.github.com/blinkseb/cms-utilities/master/crabNumberOfProcessedEvents.py
-PatTopFilteredProduction> crabNumberOfProcessedEvents.py myWorkingDir
-```
-
 
 ### Especially for data
 
 **Luminosity**
 
-You can compute the equivalent luminosity following these [instructions](https://twiki.cern.ch/twiki/bin/viewauth/CMS/LumiCalc). First, you have to generate your `/res/lumiSummary.json` file:
+You can compute the equivalent luminosity following these [instructions](https://twiki.cern.ch/twiki/bin/viewauth/CMS/LumiCalc) in each crab task folder: 
 ```bash
-PatTopFilteredProduction> crab -report -c myWorkingDir
+PatTopFilteredProduction> pixelLumiCalc.py -i result/lumiSummary.json overview >& pixelLumiCalc.log 
 ```
-Then compute the luminosity:
+
+
+***
+
+**Pileup profile**
+
+You can get the pileup profile from the data PAttuples as follows:
 ```bash
-PatTopFilteredProduction> pixelLumiCalc.py -i /<path>/myWorkingDir/res/lumiSummary.json overview
+PatTopFilteredProduction> curl -O https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions12/8TeV/PileUp/pileup_latest.txt  
+PatTopFilteredProduction> pileupCalc.py -i myWorkingDir1/result/lumiSummary.json --inputLumiJSON pileup_latest.txt --calcMode true --minBiasXsec 69400 --maxPileupBin 80 --numPileupBins 80 MyDataPileupHistogram_1.root
+```
+If you have several datasets, repeat the command for the over working directories and merge all the final histogramms:
+```bash
+PatTopFilteredProduction> hadd MyFinalDataPileupHistogram MyDataPileupHistogram_1.root MyDataPileupHistogram_2.root
 ```
 
 
@@ -108,19 +111,5 @@ PatTopFilteredProduction> mergedJSON.py myWorkingDir1/res/lumiSummary.json myWor
 You can then use the merged json file to compute the prescale factor of a given HLT trigger. For example, if you are interested in HLT_PFJet200 trigger, execute this command:
 ```bash
 PatTopFilteredProduction> pixelLumiCalc.py recorded -i mergedLumiSummaryData.json --hltpath "HLT_PFJet200_*"
-```
-
-***
-
-**Pileup profile**
-
-You can get the pileup profile from the data PAttuples as follows:
-```bash
-PatTopFilteredProduction> curl -O https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions12/8TeV/PileUp/pileup_latest.txt  
-PatTopFilteredProduction> pileupCalc.py -i myWorkingDir1/res/lumiSummary.json --inputLumiJSON pileup_latest.txt --calcMode true --minBiasXsec 69400 --maxPileupBin 80 --numPileupBins 80 MyDataPileupHistogram_1.root
-```
-If you have several datasets, repeat the command for the over working directories and merge all the final histogramms:
-```bash
-PatTopFilteredProduction> hadd MyFinalDataPileupHistogram MyDataPileupHistogram_1.root MyDataPileupHistogram_2.root
 ```
 

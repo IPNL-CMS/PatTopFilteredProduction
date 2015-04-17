@@ -21,6 +21,7 @@ Dependencies
     git cms-addpkg PhysicsTools/UtilAlgos
     git cms-addpkg RecoBTag/SoftLepton
     git cms-addpkg RecoMET/METFilters
+    git cms-addpkg RecoLuminosity/LumiDB
     git cms-merge-topic -u cms-analysis-tools:5_3_13-newJetFlavour
     git cms-merge-topic -u cms-analysis-tools:5_3_13-updatedPATConfigs
 
