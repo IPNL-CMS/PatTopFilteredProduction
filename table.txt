@@ -372,9 +372,9 @@ Publishing name: /SingleMu/ebouvier-SingleMu_Run2012C-22Jan2013_15Apr01-v1-0a081
 -------------------
 Crab task name: 150402_091357:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012D-22Jan2013
                 150417_185412:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012D-22Jan2013_Part2
-Number of events processed: 89367865 + 
-Number of events filtered: 3838053 + 
-Luminosity: 7.310 /fb + 
+Number of events processed: 89367865 + 720928 = 90088793
+Number of events filtered: 3838053 + 38672 = 3876725
+Luminosity: 7.310 /fb + 57.966 /pb = 7.368 /fb
 Publishing name: /SingleMu/ebouvier-SingleMu_Run2012D-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 
 ~~~ Electronic stream ~~~
@@ -400,14 +400,11 @@ Publishing name: /SingleElectron/ebouvier-SingleElectron_Run2012C-22Jan2013_15Ap
 -------------------
 Crab task name: 150402_093627:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012D-22Jan2013
                 150417_185140:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012D-22Jan2013_Part2
-Number of events processed: 100119755 + 
-Number of events filtered: 2567644 +  
-Luminosity: 7.302 /fb + 
+Number of events processed: 100119755 + 924414 = 101044169
+Number of events filtered: 2567644 + 29093 = 2596737
+Luminosity: 7.302 /fb + 67.030 /pb = 7.369 /fb
 Publishing name: /SingleElectron/ebouvier-SingleElectron_Run2012D-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 
 /!\ delete:
 /dpm/in2p3.fr/home/cms/data/store/user/ebouvier/SingleElectron/SingleElectron_Run2012D-22Jan2013_15Apr01-v1/150417_114658
 /dpm/in2p3.fr/home/cms/data/store/user/ebouvier/SingleMu/SingleMu_Run2012D-22Jan2013_15Apr01-v1/150417_114431
-and check the number of published files:
-740 + 20 = 760 for SingleElectronD
-741 + 16 = 757 for SingleMuD

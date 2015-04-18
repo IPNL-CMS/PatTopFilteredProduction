@@ -105,7 +105,7 @@ _--output=OUTPUT Save output to file OUTPUT_
 
 For example: 
 ```bash
-PatTopFilteredProduction> mergedJSON.py myWorkingDir1/res/lumiSummary.json myWorkingDir2/res/lumiSummary.json
+PatTopFilteredProduction> mergeJSON.py myWorkingDir1/result/lumiSummary.json myWorkingDir2/result/lumiSummary.json
 ```
 
 You can then use the merged json file to compute the prescale factor of a given HLT trigger. For example, if you are interested in HLT_PFJet200 trigger, execute this command:
