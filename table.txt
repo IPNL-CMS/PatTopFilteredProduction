@@ -356,18 +356,21 @@ Crab task name: 150401_183618:ebouvier_crab_Data_PF2PAT_MuHad_Run2012A-22Jan2013
 Number of events processed: 7329580
 Number of events filtered: 175574
 Luminosity: 876.225 /pb
+Number of files: 164
 Publishing name: /MuHad/ebouvier-MuHad_Run2012A-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_090940:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012B-22Jan2013
 Number of events processed: 53446198
 Number of events filtered: 2065195
 Luminosity: 4.412 /fb
+Number of files: 510
 Publishing name: /SingleMu/ebouvier-SingleMu_Run2012B-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_091145:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012C-22Jan2013
 Number of events processed: 84700036
 Number of events filtered: 3383008
 Luminosity: 7.050 /fb
+Number of files: 807
 Publishing name: /SingleMu/ebouvier-SingleMu_Run2012C-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_091357:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012D-22Jan2013
@@ -375,6 +378,7 @@ Crab task name: 150402_091357:ebouvier_crab_Data_PF2PAT_SingleMu_Run2012D-22Jan2
 Number of events processed: 89367865 + 720928 = 90088793
 Number of events filtered: 3838053 + 38672 = 3876725
 Luminosity: 7.310 /fb + 57.966 /pb = 7.368 /fb
+Number of files: 741 + 16 = 757
 Publishing name: /SingleMu/ebouvier-SingleMu_Run2012D-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 
 ~~~ Electronic stream ~~~
@@ -383,12 +387,14 @@ Crab task name: 150402_092250:ebouvier_crab_Data_PF2PAT_ElectronHad_Run2012A-22J
 Number of events processed: 7455591
 Number of events filtered: 124054
 Luminosity: 876.225 /pb
+Number of files: 164
 Publishing name: /ElectronHad/ebouvier-ElectronHad_Run2012A-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_092516:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012B-22Jan2013
 Number of events processed: 62023592
 Number of events filtered: 1454135
 Luminosity: 4.405 /fb
+Number of files: 509
 Publishing name: /SingleElectron/ebouvier-SingleElectron_Run2012B-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_093032:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012C-22Jan2013
@@ -396,6 +402,7 @@ Crab task name: 150402_093032:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012C-
 Number of events processed: 98124056 + 368997 = 98493053
 Number of events filtered: 2333430 + 11458 = 2344888
 Luminosity: 7.013 /fb + 27.008 /pb = 7.040 /fb 
+Number of files: 802 + 8 = 810
 Publishing name: /SingleElectron/ebouvier-SingleElectron_Run2012C-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
 -------------------
 Crab task name: 150402_093627:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012D-22Jan2013
@@ -403,8 +410,5 @@ Crab task name: 150402_093627:ebouvier_crab_Data_PF2PAT_SingleElectron_Run2012D-
 Number of events processed: 100119755 + 924414 = 101044169
 Number of events filtered: 2567644 + 29093 = 2596737
 Luminosity: 7.302 /fb + 67.030 /pb = 7.369 /fb
+Number of files: 740 + 20 = 760
 Publishing name: /SingleElectron/ebouvier-SingleElectron_Run2012D-22Jan2013_15Apr01-v1-0a0811ab37aa24280a978161285f4b48/USER
-
-/!\ delete:
-/dpm/in2p3.fr/home/cms/data/store/user/ebouvier/SingleElectron/SingleElectron_Run2012D-22Jan2013_15Apr01-v1/150417_114658
-/dpm/in2p3.fr/home/cms/data/store/user/ebouvier/SingleMu/SingleMu_Run2012D-22Jan2013_15Apr01-v1/150417_114431
