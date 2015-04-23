@@ -28,16 +28,16 @@ hadd = "hadd "+os.path.join(dirPU, "MyDataPileupHistogram.root ")
 hadd_up = "hadd "+os.path.join(dirPU, "MyDataPileupHistogram_PUup.root ")
 hadd_down = "hadd "+os.path.join(dirPU, "MyDataPileupHistogram_PUdown.root ")
 for jsonFile in jsonFiles:
-    print "Generating PU profiles for "+jsonFile.strip("lumiSummary_").rstrip(".json")
-    puFile = "MyDataPileupHistogram"+jsonFile.rstrip(".json")+".root"
+    print "Generating PU profiles for "+jsonFile[12:-5]
+    puFile = "MyDataPileupHistogram_"+jsonFile[12:-5]+".root"
     hadd += os.path.join(dirPU, puFile)+" "
     cmd = "pileupCalc.py -i "+os.path.join(dirJson, jsonFile)+" --inputLumiJSON pileup_latest.txt --calcMode true --minBiasXsec 69400 --maxPileupBin 80 --numPileupBins 80 "+os.path.join(dirPU, puFile)
     os.system(cmd)
-    puFile_up = "MyDataPileupHistogram"+jsonFile.rstrip(".json")+"_PUup.root"
+    puFile_up = "MyDataPileupHistogram_"+jsonFile[12:-5]+"_PUup.root"
     hadd_up += os.path.join(dirPU, puFile_up)+" "
     cmd_up = "pileupCalc.py -i "+os.path.join(dirJson, jsonFile)+" --inputLumiJSON pileup_latest.txt --calcMode true --minBiasXsec 72865 --maxPileupBin 80 --numPileupBins 80 "+os.path.join(dirPU, puFile_up)
     os.system(cmd_up)
-    puFile_down = "MyDataPileupHistogram"+jsonFile.rstrip(".json")+"_PUdown.root"
+    puFile_down = "MyDataPileupHistogram_"+jsonFile[12:-5]+"_PUdown.root"
     hadd_down += os.path.join(dirPU, puFile_down)+" "
     cmd_down = "pileupCalc.py -i "+os.path.join(dirJson, jsonFile)+" --inputLumiJSON pileup_latest.txt --calcMode true --minBiasXsec 65935 --maxPileupBin 80 --numPileupBins 80 "+os.path.join(dirPU, puFile_down)
     os.system(cmd_down)
@@ -53,11 +53,11 @@ dirAll = os.path.join(dir, "LumiAllPaths")
 if not os.path.isdir(dirAll):
     os.mkdir(dirAll)
 for jsonFile in jsonFiles:
-    print "Computing lumi for "+jsonFile.strip("lumiSummary_").rstrip(".json")
-    lumiFile = "pixelLumiCalc"+jsonFile.strip("lumiSummary").rstrip(".json")+".log"
+    print "Computing lumi for "+jsonFile[12:-5]
+    lumiFile = "pixelLumiCalc"+jsonFile[12:-5]+".log"
     cmd = "pixelLumiCalc.py -i "+os.path.join(dirJson, jsonFile)+" overview >& "+os.path.join(dirAll, lumiFile)
     os.system(cmd)
-print "\n"
+print ""
 
 # Lummi for isolated lepton paths
 dirIsoLep = os.path.join(dir, "LumiIsoLepPaths")
@@ -66,15 +66,15 @@ if not os.path.isdir(dirIsoLep):
 pathIsoMu = "HLT_IsoMu24_eta2p1*"
 pathIsoEl = "HLT_Ele27_WP80*"
 for jsonFile in jsonFiles:
-    print "Computing lumi for "+jsonFile.strip("lumiSummary_").rstrip(".json")+" for isolated lepton paths"
-    lumiFile = "pixelLumiCalc"+jsonFile.strip("lumiSummary").rstrip(".json")+".log"
+    print "Computing lumi for "+jsonFile[12:-5]+" for isolated lepton paths"
+    lumiFile = "pixelLumiCalc"+jsonFile[12:-5]+".log"
     cmd = "pixelLumiCalc.py -i "+os.path.join(dirJson, jsonFile)+" --hlt "
     if jsonFile.count("Mu"):
         cmd += pathIsoMu+" recorded >& "+os.path.join(dirIsoLep, lumiFile)
     if jsonFile.count("Electron"):
         cmd += pathIsoEl+" recorded >& "+os.path.join(dirIsoLep, lumiFile)
     os.system(cmd)
-print "\n"
+print ""
 
 # Lumi for lepton+jets paths
 dirLepJets = os.path.join(dir, "LumiLepJetsPaths")
@@ -83,8 +83,8 @@ if not os.path.isdir(dirLepJets):
 pathMuJets = "HLT_IsoMu24_eta2p1*"
 pathElJets = "HLT_Ele27_WP80*"
 for jsonFile in jsonFiles:
-    print "Computing lumi for "+jsonFile.strip("lumiSummary_").rstrip(".json")+" for lepton+jets paths"
-    lumiFile = "pixelLumiCalc"+jsonFile.strip("lumiSummary").rstrip(".json")+".log"
+    print "Computing lumi for "+jsonFile[12:-5]+" for lepton+jets paths"
+    lumiFile = "pixelLumiCalc"+jsonFile[12:-5]+".log"
     cmd = "pixelLumiCalc.py -i "+os.path.join(dirJson, jsonFile)+" --hlt "
     if jsonFile.count("Mu"):
         cmd += pathMuJets+" recorded >& "+os.path.join(dirLepJets, lumiFile)
