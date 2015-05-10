@@ -29,7 +29,7 @@ if options.submit:
     crabCfgs = [name for name in os.listdir(options.date) if (name.startswith('crab_') and name.endswith('.py'))]
 
     for crabCfg in crabCfgs:
-        cmd = "crab submit " + os.path.join(options.date, crabCfg) + " >& log/submit_" + crabCfg.strip("crab_").rstrip(".py") + ".log" 
+        cmd = "crab submit " + os.path.join(options.date, crabCfg) + " >& log/submit_" + crabCfg[5:-3] + ".log" 
         os.system(cmd)
 
 else:        
@@ -45,19 +45,19 @@ else:
         folderName = os.path.join(rootName, crabFolder)
 
         if options.status:
-            cmd = "crab status " + folderName + " >& log/status_" + folderName.strip("crab_tasks/"+options.date+"/") + ".log"
+            cmd = "crab status " + folderName + " >& log/status_" + folderName[24:] + ".log"
         if options.log:
-            cmd = "crab getlog " + folderName + " >& log/getlog_" + folderName.strip("crab_tasks/"+options.date+"/") + ".log"
+            cmd = "crab getlog " + folderName + " >& log/getlog_" + folderName[24:] + ".log"
         if options.get:
-            cmd = "crab getoutput " + folderName + " >& log/getouput_" + folderName.strip("crab_tasks/"+options.date+"/") + ".log"
+            cmd = "crab getoutput " + folderName + " >& log/getouput_" + folderName[24:] + ".log"
         if options.report:
-            cmd = "crab report " + folderName + " >& log/report_" + folderName.strip("crab_tasks/"+options.date+"/") + ".log"
+            cmd = "crab report " + folderName + " >& log/report_" + folderName[24:] + ".log"
         if options.publish:
-            cmd = "crab publish " + folderName + " >& log/publish_" + folderName.strip("crab_tasks/"+options.date+"/") + ".log"
+            cmd = "crab publish " + folderName + " >& log/publish_" + folderName[24:] + ".log"
         if options.purge:
-            cmd = "crab purge --cache " + folderName + " >& log/purge_" + folderName.strip("crab_tasks/"+options.date+"/") + ".log"
+            cmd = "crab purge --cache " + folderName + " >& log/purge_" + folderName[24:] + ".log"
         if options.kill:
-            cmd = "crab kill " + folderName + " >& log/kill_" + folderName.strip("crab_tasks/"+options.date+"/") + ".log"
+            cmd = "crab kill " + folderName + " >& log/kill_" + folderName[24:] + ".log"
         
         os.system(cmd)
 
