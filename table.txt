@@ -24,6 +24,12 @@ Publishing name: /TTJets_HadronicMGDecays_8TeV-madgraph/ebouvier-TTJets_Hadronic
 
 ~~~ W + jets  ~~~
 
+Crab task name: 150510_083839:ebouvier_crab_MC_PF2PAT_WJetsToLNu
+Number of events processed: 57709905
+Number of events filtered: 689467 
+Number of files: 592 
+Publishing name: /WJetsToLNu_TuneZ2Star_8TeV-madgraph-tarball/ebouvier-WJetsToLNu_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
 Crab task name: 150402_093918:ebouvier_crab_MC_PF2PAT_W1JetsToLNu
 Number of events processed: 23141598
 Number of events filtered: 383155 
@@ -50,6 +56,18 @@ Publishing name: /W4JetsToLNu_TuneZ2Star_8TeV-madgraph/ebouvier-W4JetsToLNu_15Ap
 
 ~~~ Z + jets ~~~
 
+Crab task name: 150510_084025:ebouvier_crab_MC_PF2PAT_DYJetsToLL_M-10To50
+Number of events processed: 7132223
+Number of events filtered: 947992
+Number of files: 122 
+Publishing name: /DYJetsToLL_M-10To50filter_8TeV-madgraph/ebouvier-DYJetsToLL_M-10To50_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
+Crab task name: 150510_084210:ebouvier_crab_MC_PF2PAT_DYJetsToLL_M-50 
+Number of events processed: 30459503 
+Number of events filtered: 1618468
+Number of files: 516 
+Publishing name: /DYJetsToLL_M-50_TuneZ2Star_8TeV-madgraph-tarball/ebouvier-DYJetsToLL_M-50_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
 Crab task name: 150402_094804:ebouvier_crab_MC_PF2PAT_DY1JetsToLL_M-50
 Number of events processed: 24045248
 Number of events filtered: 1665594
@@ -153,209 +171,185 @@ Number of events filtered: 11261
 Number of files: 6
 Publishing name: /T_s-channel_TuneZ2star_8TeV-powheg-tauola/ebouvier-T_s-channel_15Apr01-v1-e6007310307bd4a37c1ea3682357ad52/USER
 ~~~~~~ top mass variations for t channel
-Crab task name:
+Crab task name: 150512_100539:ebouvier_crab_MC_PF2PAT_TToLeptons_t-channel_mass166_5
 Number of events processed:
 Number of events filtered: 
-Number of files: 
-Publishing name:
+Number of files: 37 
+Publishing name: /TToLeptons_t-channel_mass166_5_8TeV-powheg-tauola/ebouvier-TToLeptons_t-channel_mass166_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_084537:ebouvier_crab_MC_PF2PAT_TToLeptons_t-channel_mass169_5
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 2894632
+Number of events filtered: 318153
 Number of files: 64
-Publishing name:
+Publishing name: /TToLeptons_t-channel_mass169_5_8TeV-powheg-tauola/ebouvier-TToLeptons_t-channel_mass169_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_084722:ebouvier_crab_MC_PF2PAT_TToLeptons_t-channel_mass171_5
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 2932796
+Number of events filtered: 324527
 Number of files: 65
-Publishing name:
+Publishing name: /TToLeptons_t-channel_mass171_5_8TeV-powheg-tauola/ebouvier-TToLeptons_t-channel_mass171_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_084901:ebouvier_crab_MC_PF2PAT_TToLeptons_t-channel_mass173_5
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 2937681
+Number of events filtered: 327275
 Number of files: 62
-Publishing name:
+Publishing name: /TToLeptons_t-channel_mass173_5_8TeV-powheg-tauola/ebouvier-TToLeptons_t-channel_mass173_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_085040:ebouvier_crab_MC_PF2PAT_TToLeptons_t-channel_mass175_5
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 2918026
+Number of events filtered: 327486
 Number of files: 64
-Publishing name:
+Publishing name: /TToLeptons_t-channel_mass175_5_8TeV-powheg-tauola/ebouvier-TToLeptons_t-channel_mass175_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
-Crab task name:
-Number of events processed:
+Crab task name: 150512_100539:ebouvier_crab_MC_PF2PAT_TToLeptons_t-channel_mass178_5
+Number of events processed: 
 Number of events filtered: 
-Number of files: 
-Publishing name:
+Number of files: 36
+Publishing name: /TToLeptons_t-channel_mass178_5_8TeV-powheg-tauola/ebouvier-TToLeptons_t-channel_mass178_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
-Crab task name:
-Number of events processed:
-Number of events filtered: 
-Number of files: 
-Publishing name:
+Crab task name: 150512_100850:ebouvier_crab_MC_PF2PAT_TBarToLeptons_t-channel_mass166_5
+Number of events processed: 891031
+Number of events filtered: 101645
+Number of files: 20
+Publishing name: /TBarToLeptons_t-channel_mass166_5_8TeV-powheg-tauola/ebouvier-TBarToLeptons_t-channel_mass166_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_085539:ebouvier_crab_MC_PF2PAT_TBarToLeptons_t-channel_mass169_5
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 1460416
+Number of events filtered: 168351
 Number of files: 31
 Publishing name: /TBarToLeptons_t-channel_mass169_5_8TeV-powheg-tauola/ebouvier-TBarToLeptons_t-channel_mass169_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_085713:ebouvier_crab_MC_PF2PAT_TBarToLeptons_t-channel_mass171_5
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 1468594
+Number of events filtered: 170348
 Number of files: 31
-Publishing name:
+Publishing name: /TBarToLeptons_t-channel_mass171_5_8TeV-powheg-tauola/ebouvier-TBarToLeptons_t-channel_mass171_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_085851:ebouvier_crab_MC_PF2PAT_TBarToLeptons_t-channel_mass173_5
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 1469318
+Number of events filtered: 171477
 Number of files: 30
-Publishing name:
+Publishing name: /TBarToLeptons_t-channel_mass173_5_8TeV-powheg-tauola/ebouvier-TBarToLeptons_t-channel_mass173_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_090026:ebouvier_crab_MC_PF2PAT_TBarToLeptons_t-channel_mass175_5
-Number of events processed:
-Number of events filtered: 
+Number of events processed: 1469507
+Number of events filtered: 172748
 Number of files: 31
-Publishing name:
+Publishing name: /TBarToLeptons_t-channel_mass175_5_8TeV-powheg-tauola/ebouvier-TBarToLeptons_t-channel_mass175_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
-Crab task name:
+Crab task name: 150512_100913:ebouvier_crab_MC_PF2PAT_TBarToLeptons_t-channel_mass178_5
 Number of events processed:
 Number of events filtered: 
-Number of files: 
-Publishing name:
+Number of files: 21
+Publishing name: /TBarToLeptons_t-channel_mass178_5_8TeV-powheg-tauola/ebouvier-TBarToLeptons_t-channel_mass178_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 ~~~~~~ 166.5 GeV/c²
-Crab task name: 
-Number of events processed:
+Crab task name: 150512_101117:ebouvier_crab_MC_PF2PAT_TBarToLeptons_s-channel_mass166_5
+Number of events processed: 
 Number of events filtered: 
-Number of files: 
-Publishing name:
--------------------
-Crab task name:
-Number of events processed:
-Number of events filtered: 
-Number of files: 
-Publishing name:
+Number of files: 16
+Publishing name: /TBarToLeptons_s-channel_mass166_5_8TeV-powheg-tauola/ebouvier-TBarToLeptons_s-channel_mass166_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_090520:ebouvier_crab_MC_PF2PAT_TBarToTlepWhad_tW-channel-DR_mass166_5
 Number of events processed:
 Number of events filtered: 
 Number of files: 6
-Publishing name:
+Publishing name: /TBarToTlepWhad_tW-channel-DR_mass166_5_8TeV-powheg-tauola/ebouvier-TBarToTlepWhad_tW-channel-DR_mass166_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_090706:ebouvier_crab_MC_PF2PAT_TBarToThadWlep_tW-channel-DR_mass166_5
 Number of events processed:
 Number of events filtered: 
 Number of files: 5
-Publishing name:
+Publishing name: /TBarToThadWlep_tW-channel-DR_mass166_5_8TeV-powheg-tauola/ebouvier-TBarToThadWlep_tW-channel-DR_mass166_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_090843:ebouvier_crab_MC_PF2PAT_TBarToDilepton_tW-channel-DR_mass166_5
 Number of events processed:
 Number of events filtered: 
 Number of files: 16
-Publishing name:
+Publishing name: /TBarToDilepton_tW-channel-DR_mass166_5_8TeV-powheg-tauola/ebouvier-TBarToDilepton_tW-channel-DR_mass166_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
-Crab task name: 
+Crab task name: 150512_101350:ebouvier_crab_MC_PF2PAT_TToLeptons_s-channel_mass166_5
 Number of events processed:
 Number of events filtered: 
-Number of files: 
-Publishing name:
--------------------
-Crab task name:
-Number of events processed:
-Number of events filtered: 
-Number of files: 
-Publishing name:
+Number of files: 33
+Publishing name: /TToLeptons_s-channel_mass166_5_8TeV-powheg-tauola/ebouvier-TToLeptons_s-channel_mass166_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_091156:ebouvier_crab_MC_PF2PAT_TToTlepWhad_tW-channel-DR_mass166_5
 Number of events processed:
 Number of events filtered: 
 Number of files: 6
-Publishing name:
+Publishing name: /TToTlepWhad_tW-channel-DR_mass166_5_8TeV-powheg-tauola/ebouvier-TToTlepWhad_tW-channel-DR_mass166_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_091336:ebouvier_crab_MC_PF2PAT_TToThadWlep_tW-channel-DR_mass166_5
-Number of events processed:
+Number of events processed: 
 Number of events filtered: 
 Number of files: 6
-Publishing name:
+Publishing name: /TToThadWlep_tW-channel-DR_mass166_5_8TeV-powheg-tauola/ebouvier-TToThadWlep_tW-channel-DR_mass166_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_091514:ebouvier_crab_MC_PF2PAT_TToDilepton_tW-channel-DR_mass166_5
 Number of events processed:
 Number of events filtered: 
 Number of files: 16
-Publishing name:
+Publishing name: /TToDilepton_tW-channel-DR_mass166_5_8TeV-powheg-tauola/ebouvier-TToDilepton_tW-channel-DR_mass166_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 ~~~~~~ 178.5 GeV/c²
-Crab task name:
+Crab task name: 150512_101151:ebouvier_crab_MC_PF2PAT_TBarToLeptons_s-channel_mass178_5
 Number of events processed:
 Number of events filtered: 
-Number of files: 
-Publishing name:
--------------------
-Crab task name:
-Number of events processed:
-Number of events filtered: 
-Number of files: 
-Publishing name:
+Number of files: 18
+Publishing name: /TBarToLeptons_s-channel_mass178_5_8TeV-powheg-tauola/ebouvier-TBarToLeptons_s-channel_mass178_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_091831:ebouvier_crab_MC_PF2PAT_TBarToTlepWhad_tW-channel-DR_mass178_5
 Number of events processed:
 Number of events filtered: 
 Number of files: 5
-Publishing name:
+Publishing name: /TBarToTlepWhad_tW-channel-DR_mass178_5_8TeV-powheg-tauola/ebouvier-TBarToTlepWhad_tW-channel-DR_mass178_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_092023:ebouvier_crab_MC_PF2PAT_TBarToThadWlep_tW-channel-DR_mass178_5
 Number of events processed:
 Number of events filtered: 
 Number of files: 6
-Publishing name:
+Publishing name: /TBarToThadWlep_tW-channel-DR_mass178_5_8TeV-powheg-tauola/ebouvier-TBarToThadWlep_tW-channel-DR_mass178_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_092202:ebouvier_crab_MC_PF2PAT_TBarToDilepton_tW-channel-DR_mass178_5
 Number of events processed:
 Number of events filtered: 
 Number of files: 14
-Publishing name:
+Publishing name: /TBarToDilepton_tW-channel-DR_mass178_5_8TeV-powheg-tauola/ebouvier-TBarToDilepton_tW-channel-DR_mass178_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
-Crab task name: 
+Crab task name: 150512_101414:ebouvier_crab_MC_PF2PAT_TToLeptons_s-channel_mass178_5
 Number of events processed:
 Number of events filtered: 
-Number of files: 
-Publishing name:
--------------------
-Crab task name:
-Number of events processed:
-Number of events filtered: 
-Number of files: 
-Publishing name:
+Number of files: 31
+Publishing name: /TToLeptons_s-channel_mass178_5_8TeV-powheg-tauola/ebouvier-TToLeptons_s-channel_mass178_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_092526:ebouvier_crab_MC_PF2PAT_TToTlepWhad_tW-channel-DR_mass178_5
 Number of events processed:
 Number of events filtered: 
 Number of files: 6
-Publishing name:
+Publishing name: /TToTlepWhad_tW-channel-DR_mass178_5_8TeV-powheg-tauola/ebouvier-TToTlepWhad_tW-channel-DR_mass178_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_092705:ebouvier_crab_MC_PF2PAT_TToThadWlep_tW-channel-DR_mass178_5
 Number of events processed:
 Number of events filtered: 
 Number of files: 6
-Publishing name:
+Publishing name: /TToThadWlep_tW-channel-DR_mass178_5_8TeV-powheg-tauola/ebouvier-TToThadWlep_tW-channel-DR_mass178_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_092843:ebouvier_crab_MC_PF2PAT_TToDilepton_tW-channel-DR_mass178_5
 Number of events processed:
 Number of events filtered: 
 Number of files: 15
-Publishing name:
+Publishing name: /TToDilepton_tW-channel-DR_mass178_5_8TeV-powheg-tauola/ebouvier-TToDilepton_tW-channel-DR_mass178_5_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 
 ~~~ Jpsi enriched ttbar ~~~
 
 Crab task name: 150510_093024:ebouvier_crab_MC_PF2PAT_TTJets_MSDecays_JpsiFilter_1665 
-Number of events processed:  
-Number of events filtered:   
+Number of events processed: 2537451
+Number of events filtered: 680154  
 Number of files: 86
-Publishing name:  
+Publishing name: /TTJets_MSDecays_JpsiFilter_1665_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_1665_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_103505:ebouvier_crab_MC_PF2PAT_TTJets_MSDecays_JpsiFilter_1695
-Number of events processed: 
-Number of events filtered: 
+Number of events processed: 1909822
+Number of events filtered: 515068
 Number of files: 65 
 Publishing name: /TTJets_MSDecays_JpsiFilter_1695_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_1695_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
@@ -363,55 +357,55 @@ Crab task name: 150510_104054:ebouvier_crab_MC_PF2PAT_TTJets_MSDecays_JpsiFilter
 Number of events processed: 
 Number of events filtered: 
 Number of files: 58 
-Publishing name: 
+Publishing name: /TTJets_MSDecays_JpsiFilter_1715_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_1715_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_104119:ebouvier_crab_MC_PF2PAT_TTJets_MSDecays_JpsiFilter_1725 
-Number of events processed: 
-Number of events filtered: 
+Number of events processed: 4037468
+Number of events filtered: 1092175
 Number of files: 142 
-Publishing name: 
+Publishing name: /TTJets_MSDecays_JpsiFilter_central_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_1725_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_093656:ebouvier_crab_MC_PF2PAT_TTJets_MSDecays_JpsiFilter_1735 
-Number of events processed: 
-Number of events filtered: 
+Number of events processed: 1775180
+Number of events filtered: 481408
 Number of files: 75 
 Publishing name: /TTJets_MSDecays_JpsiFilter_1735_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_1735_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_104433:ebouvier_crab_MC_PF2PAT_TTJets_MSDecays_JpsiFilter_1755 
-Number of events processed: 
-Number of events filtered: 
+Number of events processed: 2878798
+Number of events filtered: 781967
 Number of files: 102 
-Publishing name: 
+Publishing name: /TTJets_MSDecays_JpsiFilter_1755_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_1755_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_094003:ebouvier_crab_MC_PF2PAT_TTJets_MSDecays_JpsiFilter_1785 
-Number of events processed: 
-Number of events filtered: 
+Number of events processed: 1836496
+Number of events filtered: 501447
 Number of files: 75 
 Publishing name: /TTJets_MSDecays_JpsiFilter_1785_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_1785_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_094442:ebouvier_crab_MC_PF2PAT_TTJets_MSDecays_JpsiFilter_scaledown 
-Number of events processed: 
-Number of events filtered: 
+Number of events processed: 1700060
+Number of events filtered: 460171
 Number of files: 63 
 Publishing name: /TTJets_MSDecays_JpsiFilter_scaledown_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_scaledown_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_104744:ebouvier_crab_MC_PF2PAT_TTJets_MSDecays_JpsiFilter_scaleup 
-Number of events processed: 
-Number of events filtered: 
+Number of events processed: 2669713
+Number of events filtered: 721741
 Number of files: 90 
-Publishing name: 
+Publishing name: /TTJets_MSDecays_JpsiFilter_scaleup_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_scaleup_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_094136:ebouvier_crab_MC_PF2PAT_TTJets_MSDecays_JpsiFilter_matchingdown 
-Number of events processed: 
-Number of events filtered: 
+Number of events processed: 2247788
+Number of events filtered: 607964
 Number of files: 78 
 Publishing name: /TTJets_MSDecays_JpsiFilter_matchingdown_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_matchingdown_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 -------------------
 Crab task name: 150510_104433:ebouvier_crab_MC_PF2PAT_TTJets_MSDecays_JpsiFilter_matchingup 
-Number of events processed: 
-Number of events filtered: 
+Number of events processed: 2741192
+Number of events filtered: 741424
 Number of files: 101 
-Publishing name: 
+Publishing name: /TTJets_MSDecays_JpsiFilter_matchingup_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_matchingup_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 
 
 ===================
