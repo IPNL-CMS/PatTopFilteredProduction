@@ -19,7 +19,8 @@ config.Data.outLFNDirBase = @username@
 config.Data.publication = True
 config.Data.publishDBS = 'phys03'
 config.Data.publishDataName = @publishname@
+#config.Data.ignoreLocality = True
 
 config.section_("Site")
 config.Site.storageSite = 'T3_FR_IPNL'
-#config.Site.whitelist = ['T3_FR_IPNL']
+#config.Site.whitelist = ['T2_US_Caltech','T2_US_Florida','T2_US_MIT','T2_US_Nebraska','T2_US_Purdue','T2_US_UCSD','T2_US_Vanderbilt','T2_US_Wisconsin']

@@ -407,6 +407,95 @@ Number of events filtered: 741424
 Number of files: 101 
 Publishing name: /TTJets_MSDecays_JpsiFilter_matchingup_TuneZ2star_8TeV-madgraph-tauola/ebouvier-TTJets_MSDecays_JpsiFilter_matchingup_15May10-v1-e6007310307bd4a37c1ea3682357ad52/USER
 
+~~~ P11 ttbar ~~~
+
+Crab task name: 150630_082443:ebouvier_crab_MC_PF2PAT_TTJets_FullLeptMGDecays_TuneP11
+Number of events processed: 5976484
+Number of events filtered: 1748738
+Number of files: 174 
+Publishing name: /TTJets_FullLeptMGDecays_TuneP11_8TeV-madgraph-tauola/ebouvier-TTJets_FullLeptMGDecays_TuneP11_15Jun30-v1-e6007310307bd4a37c1ea3682357ad52/USER 
+-------------------
+Crab task name: 150630_082709:ebouvier_crab_MC_PF2PAT_TTJets_SemiLeptMGDecays_TuneP11
+Number of events processed:
+Number of events filtered:   
+Number of files: 325
+Publishing name: /TTJets_SemiLeptMGDecays_TuneP11_8TeV-madgraph-tauola/ebouvier-TTJets_SemiLeptMGDecays_TuneP11_15Jun30-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
+Crab task name: 150701_165936:ebouvier_crab_MC_PF2PAT_TTJets_HadronicMGDecays_TuneP11
+Number of events processed:
+Number of events filtered:   
+Number of files: 282
+Publishing name: /TTJets_HadronicMGDecays_TuneP11_8TeV-madgraph-tauola/ebouvier-TTJets_HadronicMGDecays_TuneP11_15Jul01-v1-e6007310307bd4a37c1ea3682357ad52/USER 
+-------------------
+Crab task name: 150630_082944:ebouvier_crab_MC_PF2PAT_TTJets_FullLeptMGDecays_TuneP11mpiHi
+Number of events processed: 3982409 
+Number of events filtered: 1166707  
+Number of files: 107
+Publishing name: /TTJets_FullLeptMGDecays_TuneP11mpiHi_8TeV-madgraph-tauola/ebouvier-TTJets_FullLeptMGDecays_TuneP11mpiHi_15Jun30-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
+Crab task name: 150630_083208:ebouvier_crab_MC_PF2PAT_TTJets_SemiLeptMGDecays_TuneP11mpiHi
+Number of events processed: 7978174
+Number of events filtered: 1388571   
+Number of files: 209
+Publishing name: /TTJets_SemiLeptMGDecays_TuneP11mpiHi_8TeV-madgraph-tauola/ebouvier-TTJets_SemiLeptMGDecays_TuneP11mpiHi_15Jun30-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
+Crab task name: 150701_170238:ebouvier_crab_MC_PF2PAT_TTJets_HadronicMGDecays_TuneP11mpiHi
+Number of events processed:
+Number of events filtered:   
+Number of files: 195
+Publishing name: /TTJets_HadronicMGDecays_TuneP11mpiHi_8TeV-madgraph-tauola/ebouvier-TTJets_HadronicMGDecays_TuneP11mpiHi_15Jul01-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
+Crab task name: 150630_083437:ebouvier_crab_MC_PF2PAT_TTJets_FullLeptMGDecays_TuneP11TeV
+Number of events processed: 3984963
+Number of events filtered: 1164347  
+Number of files: 123
+Publishing name: /TTJets_FullLeptMGDecays_TuneP11TeV_8TeV-madgraph-tauola/ebouvier-TTJets_FullLeptMGDecays_TuneP11TeV_15Jun30-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
+Crab task name: 150630_083708:ebouvier_crab_MC_PF2PAT_TTJets_SemiLeptMGDecays_TuneP11TeV
+Number of events processed: 7853450
+Number of events filtered: 1371514  
+Number of files: 221
+Publishing name: /TTJets_SemiLeptMGDecays_TuneP11TeV_8TeV-madgraph-tauola/ebouvier-TTJets_SemiLeptMGDecays_TuneP11TeV_15Jun30-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
+Crab task name: 150701_170528:ebouvier_crab_MC_PF2PAT_TTJets_HadronicMGDecays_TuneP11TeV
+Number of events processed:
+Number of events filtered:   
+Number of files: 192
+Publishing name: /TTJets_HadronicMGDecays_TuneP11TeV_8TeV-madgraph-tauola/ebouvier-TTJets_HadronicMGDecays_TuneP11TeV_15Jul01-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
+Crab task name: 150630_083934:ebouvier_crab_MC_PF2PAT_TTJets_FullLeptMGDecays_TuneP11noCR
+Number of events processed: 5974627
+Number of events filtered: 1742504  
+Number of files: 171
+Publishing name: /TTJets_FullLeptMGDecays_TuneP11noCR_8TeV-madgraph-tauola/ebouvier-TTJets_FullLeptMGDecays_TuneP11noCR_15Jun30-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
+Crab task name: 150630_084201:ebouvier_crab_MC_PF2PAT_TTJets_SemiLeptMGDecays_TuneP11noCR
+Number of events processed:
+Number of events filtered:   
+Number of files: 347
+Publishing name: /TTJets_SemiLeptMGDecays_TuneP11noCR_8TeV-madgraph-tauola/ebouvier-TTJets_SemiLeptMGDecays_TuneP11noCR_15Jun30-v1-e6007310307bd4a37c1ea3682357ad52/USER
+-------------------
+Crab task name: 150701_170819:ebouvier_crab_MC_PF2PAT_TTJets_HadronicMGDecays_TuneP11noCR
+Number of events processed:
+Number of events filtered:   
+Number of files: 285
+Publishing name: /TTJets_HadronicMGDecays_TuneP11noCR_8TeV-madgraph-tauola/ebouvier-TTJets_HadronicMGDecays_TuneP11noCR_15Jul01-v1-e6007310307bd4a37c1ea3682357ad52/USER
+
+~~~ Powheg ttbar ~~~
+
+Crab task name: 150630_084427:ebouvier_crab_MC_PF2PAT_TTJets_Powheg
+Number of events processed: 21675970
+Number of events filtered: 2289539  
+Number of files: 540
+Publishing name: /TT_CT10_TuneZ2star_8TeV-powheg-tauola/ebouvier-TTJets_Powheg_15Jun30-v1-e6007310307bd4a37c1ea3682357ad52/USER
+
+~~~ MC@NLO ttbar ~~~
+
+Crab task name: 150630_084708:ebouvier_crab_MC_PF2PAT_TTJets_MCatNLO
+Number of events processed: 32852589
+Number of events filtered: 3516931  
+Number of files: 829 
+Publishing name: /TT_8TeV-mcatnlo/ebouvier-TTJets_MCatNLO_15Jun30-v1-e6007310307bd4a37c1ea3682357ad52/USER 
 
 ===================
 Primary datasets
